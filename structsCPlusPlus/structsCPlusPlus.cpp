@@ -25,9 +25,10 @@ void decideStudentsExam(Student Students[], int size)		//decide all students sta
 	for (int i = 0; i < size; i++)
 	{
 		//track student by its index (i + 1)
+		//Students[i].sNumber can be used. Both ways are true. 
 
 		cout << i + 1 << ". Student number: " << (Students + i) -> sNumber << " "
-			<< " Student name: " << (Students + i) -> sName << " " 
+			<< " Student name: " << Students[i].sName << " " 
 			<< " Student Average Grade: " << (Students + i) -> sGradeAverage;
 
 		decidePassedOrNot(Students[i]);		//use decider function (function in function
